@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">TuitLens</string>
+    <string name="welcome_text">WELCOME</string>
+    <string name="app_sec_name">TUIT LENS</string>
+    <string name="skip_text">Skip</string>
+    <string name="btn_text">Next</string>
+    <string name="pager_first_headline"><![CDATA[Scan Image Fast & Easy]]></string>
+    <string name="pager_first_desc">Turn your photographs of text or pdf files into an editable and searchable text with just a few clicks.</string>
 </resources>

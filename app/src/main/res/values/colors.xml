@@ -12,6 +12,15 @@
     <color name="main_center_y_gr">#05A8E8</color>
     <color name="main_center_x_gr">#05A8E8</color>
     <color name="scan_stroke">#FFFFFF</color>
+    <color name="text_color">#FAFAF8</color>
+    <color name="pager_back">#FFFFFF</color>
+    <color name="skip_color">#7B7B7B</color>
+    <color name="ripple_color">#403E3E</color>
+    <color name="btn_back">#00A8E9</color>
+    <color name="dot_unselected_color">#C7C7C7</color>
+    <color name="dot_selected_color">#6A6A6A</color>
+    <color name="text_headline_color">#262626</color>
+    <color name="text_desc_color">#4E4E4E</color>
 
     
 </resources>
