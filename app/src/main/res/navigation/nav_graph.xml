@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        tools:layout="@layout/splash_screen"
+        android:name="uz.tuit.tuitlens.SplashScreen"
+        android:label="SplashScreen" >
+        <action
+            android:id="@+id/action_splashScreen_to_viewPagerHome"
+            app:destination="@id/viewPagerHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPagerHome"
+        tools:layout="@layout/view_pager_home"
+        android:name="uz.tuit.tuitlens.ViewPagerHome"
+        android:label="ViewPagerHome" >
+
+    </fragment>
+</navigation>
