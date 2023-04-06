@@ -6,4 +6,8 @@
     <string name="btn_text">Next</string>
     <string name="pager_first_headline"><![CDATA[Scan Image Fast & Easy]]></string>
     <string name="pager_first_desc">Turn your photographs of text or pdf files into an editable and searchable text with just a few clicks.</string>
+    <string name="pager_second_headline">Translate to over 150 supported languages</string>
+    <string name="pager_second_desc">Having difficulty translated words from printed post or signages? Once you have scanned an image, we can translate it for you</string>
+    <string name="pager_third_headline">Copy, share and export to pdf or document format</string>
+    <string name="pager_third_desc">It\'s easy to share or export to pdf or doc format without we need to copying and pasting to external word processing program</string>
 </resources>

@@ -17,10 +17,11 @@
     <color name="skip_color">#7B7B7B</color>
     <color name="ripple_color">#403E3E</color>
     <color name="btn_back">#00A8E9</color>
-    <color name="dot_unselected_color">#C7C7C7</color>
-    <color name="dot_selected_color">#6A6A6A</color>
+    <color name="dot_unselected_color">#6B6B6B</color>
+    <color name="dot_selected_color">#262626</color>
     <color name="text_headline_color">#262626</color>
     <color name="text_desc_color">#4E4E4E</color>
+    <color name="status_bar_color">#03BDEA</color>
 
     
 </resources>
