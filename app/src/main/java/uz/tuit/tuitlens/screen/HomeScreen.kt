@@ -5,7 +5,7 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import uz.tuit.tuitlens.R
 
-class HomeScreen : Fragment(R.layout.home_screen) {
+class HomeScreen : Fragment(R.layout.welcome_screen) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 

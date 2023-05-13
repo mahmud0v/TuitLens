@@ -22,6 +22,8 @@
     <color name="text_headline_color">#262626</color>
     <color name="text_desc_color">#4E4E4E</color>
     <color name="status_bar_color">#03BDEA</color>
+    <color name="import_btn">#FFEF2E</color>
+    <color name="text_black">#0E182D</color>
 
     
 </resources>
