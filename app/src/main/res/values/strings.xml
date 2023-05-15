@@ -15,4 +15,6 @@
     <string name="take_picture">Take a picture</string>
     <string name="gallery">Gallery</string>
     <string name="import_pdf">Import PDF</string>
+    <string name="edit_image">Edit Image</string>
+    <string name="continous">Continous</string>
 </resources>
