@@ -7,11 +7,13 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
+import dagger.hilt.android.AndroidEntryPoint
 import uz.tuit.tuitlens.R
 import uz.tuit.tuitlens.databinding.SplashScreenBinding
 import uz.tuit.tuitlens.utils.LabelWords.Companion.SHARED_KEY
 import uz.tuit.tuitlens.utils.LabelWords.Companion.SHARED_PAGER_NAME
 
+@AndroidEntryPoint
 class SplashScreen : Fragment(R.layout.splash_screen) {
     private val binding: SplashScreenBinding by viewBinding()
 
@@ -28,7 +30,7 @@ class SplashScreen : Fragment(R.layout.splash_screen) {
 
             override fun onFinish() {
                 if (getLastPagerIndex() == 2) {
-                    findNavController().navigate(SplashScreenDirections.moveToHomeScreen())
+                    findNavController().navigate(SplashScreenDirections.actionSplashScreenToWelcomeScreen())
                 } else {
                     findNavController().navigate(SplashScreenDirections.moveToViewPagerHome())
                 }

@@ -3,6 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
     id 'kotlin-parcelize'
+    id 'dagger.hilt.android.plugin'
     id 'androidx.navigation.safeargs.kotlin'
 }
 
@@ -41,6 +42,7 @@ android {
 
 dependencies {
 
+
     def nav_version = "2.5.3"
 
 
@@ -69,7 +71,46 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
 
 
+    // To recognize Latin script
+    implementation 'com.google.mlkit:text-recognition:16.0.0'
 
+
+    /**
+     *  Dagger Hilt
+     */
+    implementation "com.google.dagger:hilt-android:2.44"
+    kapt "com.google.dagger:hilt-compiler:2.44.2"
+
+
+    /**
+     * Chucker Interception
+     */
+    debugImplementation "com.github.chuckerteam.chucker:library:3.5.2"
+    releaseImplementation "com.github.chuckerteam.chucker:library-no-op:3.5.2"
+
+
+    /**
+     * Retrofit
+     *
+     */
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+
+
+    def camerax_version = "1.2.2"
+    implementation "androidx.camera:camera-core:${camerax_version}"
+    implementation "androidx.camera:camera-camera2:${camerax_version}"
+    implementation "androidx.camera:camera-lifecycle:${camerax_version}"
+    implementation "androidx.camera:camera-video:${camerax_version}"
+
+    implementation "androidx.camera:camera-view:${camerax_version}"
+    implementation "androidx.camera:camera-extensions:${camerax_version}"
+
+
+    implementation 'com.google.mlkit:language-id:17.0.4'
+
+    implementation 'com.google.mlkit:translate:17.0.1'
 
 
     implementation 'androidx.core:core-ktx:1.7.0'

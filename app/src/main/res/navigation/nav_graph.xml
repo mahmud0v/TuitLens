@@ -16,10 +16,8 @@
             app:popUpTo="@id/nav_graph"
             app:popUpToInclusive="true" />
         <action
-            android:id="@+id/move_to_home_screen"
-            app:destination="@id/homeScreen"
-            app:popUpTo="@id/nav_graph"
-            app:popUpToInclusive="true" />
+            android:id="@+id/action_splashScreen_to_welcomeScreen"
+            app:destination="@id/welcomeScreen" />
 
 
     </fragment>
@@ -29,16 +27,24 @@
         android:name="uz.tuit.tuitlens.screen.ViewPagerHome"
         android:label="ViewPagerHome" >
 
-        <action
-            android:id="@+id/action_viewPagerHome_to_homeScreen"
-            app:destination="@id/homeScreen"
-            app:popUpTo="@id/nav_graph"
-            app:popUpToInclusive="true" />
 
+        <action
+            android:id="@+id/action_viewPagerHome_to_welcomeScreen"
+            app:destination="@id/welcomeScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/welcomeScreen"
+        tools:layout="@layout/welcome_screen"
+        android:name="uz.tuit.tuitlens.screen.WelcomeScreen"
+        android:label="WelcomeScreen" >
+        <action
+            android:id="@+id/action_welcomeScreen_to_takePhotoScreen"
+            app:destination="@id/takePhotoScreen" />
     </fragment>
     <fragment
-        android:id="@+id/homeScreen"
-        tools:layout="@layout/home_screen"
-        android:name="uz.tuit.tuitlens.screen.HomeScreen"
-        android:label="HomeScreen" />
+        android:id="@+id/takePhotoScreen"
+        tools:layout="@layout/camera_screen"
+        android:name="uz.tuit.tuitlens.screen.TakePhotoScreen"
+        android:label="TakePhotoScreen" />
 </navigation>
